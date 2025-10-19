@@ -12,14 +12,16 @@ import Contact from "./components/Contact";
 function App() {
   return (
     <div className="flex flex-col min-h-screen bg-gray-50 text-gray-800">
-      <Navbar />
       <main className="flex-grow">
         <Router>
+          <Navbar />
+
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/products" element={<Products />} />
             <Route path="/contact" element={<Contact />} />
+            
           </Routes>
         </Router>
       </main>
