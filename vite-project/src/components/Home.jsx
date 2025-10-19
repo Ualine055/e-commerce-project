@@ -19,7 +19,7 @@ export default function Home() {
       <div className="flex flex-col sm:flex-row gap-4">
         <Link
           to="/products"
-          className="bg-black text-white px-6 py-3 rounded-full shadow-md hover:bg-gray-800 transition"
+          className="border border-black text-black px-6 py-3 rounded-full hover:bg-black hover:text-white transition"
         >
           Shop Now
         </Link>
@@ -27,8 +27,6 @@ export default function Home() {
           Learn More
         </button>
 
-
-        
 
       </div>
       
