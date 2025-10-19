@@ -38,7 +38,7 @@ A modern, responsive e-commerce website built with React, Vite, and Tailwind CSS
    --- bash
    git clone https://github.com/Ualine055/e-commerce-project.git
 
-   cd luxestore-ecommerce
+   cd e-commerce-project
 
    ---
 
@@ -48,7 +48,7 @@ A modern, responsive e-commerce website built with React, Vite, and Tailwind CSS
 
 ## 📁 Project Structure
 
----
+###
 
 luxestore-ecommerce/
 ├── public/
