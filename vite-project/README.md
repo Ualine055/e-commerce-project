@@ -1,16 +1,76 @@
-# React + Vite
+# LuxeStore - Static E-commerce Homepage
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive e-commerce website built with React, Vite, and Tailwind CSS. This project demonstrates component-based architecture, routing, props usage, and event handling.
 
-Currently, two official plugins are available:
+## 🌟 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Four Main Pages**: Home, Products, About, and Contact
+- **Responsive Design**: Fully responsive across desktop, tablet, and mobile devices
+- **Reusable Components**: Modular component architecture with Navbar, Footer, ProductCard, and HeroSection
+- **Dynamic Product Display**: 12 products across 3 categories (Electronics, Fashion, Accessories)
+- **Interactive Elements**: Add to Cart functionality with event handling
+- **Category Filtering**: Filter products by category on the Products page
+- **Contact Form**: Functional contact form with form validation
 
-## React Compiler
+## 📸 Screenshots
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+![Homepage](../vite-project/src/assets/homepage.PNG)
+![Homepage](../assets/)
 
-## Expanding the ESLint configuration
+## 🛠️ Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React** - UI library for building component-based interfaces
+- **Vite** - Fast build tool and development server
+- **React Router DOM** - Client-side routing
+- **Tailwind CSS** - Utility-first CSS framework
+- **JavaScript (ES6+)** - Modern JavaScript features
+
+## 📋 Pages
+
+1. **Home** - Home section with welcome message, 8 featured products, and "Why Choose Us" section
+2. **Products** - Complete product catalog with category filtering (12 products total)
+3. **About** - Company story, mission statement, and "Why Choose Us" benefits
+4. **Contact** - Contact information and feedback form
+
+### Installation
+
+1. **Clone the repository**
+   --- bash
+   git clone https://github.com/yourusername/luxestore-ecommerce.git
+   cd luxestore-ecommerce
+
+   ---
+
+2. **Open your browser**
+   
+   Navigate to `http://localhost:5174/` to view the application.
+
+## 📁 Project Structure
+
+---
+
+luxestore-ecommerce/
+├── public/
+│   └── vite.svg
+├── src/
+│   ├── components/
+│   │   ├── Navbar.jsx          # Navigation bar component
+│   │   ├── Footer.jsx 
+|   |   ├── Home.jsx            # Homepage
+│   │   ├── Products.jsx        # Products listing page
+│   │   ├── About.jsx           # About page
+│   │   └── Contact.jsx          # Footer component
+│   ├── App.jsx                 # Main app component with routing
+│   ├── main.jsx                # Application entry point
+│   └── index.css               # Global styles and Tailwind imports
+├── index.html                  # HTML template
+├── package.json                # Dependencies and scripts
+├── vite.config.js              # Vite configuration
+├── tailwind.config.js          # Tailwind CSS configuration
+├── postcss.config.js           # PostCSS configuration
+└── README.md                   # Project documentation
+---
+
+## 🔗 Live Demo
+
+[View Live Demo](https://your-deployment-url.vercel.app)
