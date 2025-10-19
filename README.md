@@ -14,8 +14,8 @@ A modern, responsive e-commerce website built with React, Vite, and Tailwind CSS
 
 ## 📸 Screenshots
 
-![Homepage](../vite-project/src/assets/homepage.PNG)
-![Homepage](../assets/)
+![Homepage](./vite-project/src/assets/homepage.PNG)
+
 
 ## 🛠️ Technologies Used
 
@@ -71,7 +71,3 @@ luxestore-ecommerce/
 ├── postcss.config.js           # PostCSS configuration
 └── README.md                   # Project documentation
 ---
-
-## 🔗 Live Demo
-
-[View Live Demo](https://your-deployment-url.vercel.app)
