@@ -27,6 +27,12 @@ export default function Navbar() {
             Contact
           </Link>
         </li>
+        {/* <li>
+            <Link to="/cart" className="hover:underline font-medium">
+            Cart 🛒
+            </Link>
+        </li> */}
+
       </ul>
       <div className="text-2xl cursor-pointer">🛒</div>
     </nav>
