@@ -94,8 +94,8 @@ export default function About() {
         </div>
 
         <div className="bg-primary text-white rounded-lg p-8 md:p-12 text-center">
-          <h2 className="text-3xl font-serif font-bold mb-4 text-black-300">Our Mission</h2>
-          <p className="text-lg leading-relaxed max-w-3xl mx-auto text-gray-200">
+          <h2 className="text-3xl font-serif font-bold mb-4 text-black">Our Mission</h2>
+          <p className="text-lg leading-relaxed max-w-3xl mx-auto text-gray-700">
             To inspire and empower our customers by providing access to thoughtfully designed, high-quality products
             that enhance their daily lives and reflect their unique style. We're committed to sustainability, ethical
             sourcing, and building lasting relationships with our community.
