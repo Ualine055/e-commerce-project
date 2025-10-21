@@ -5,7 +5,7 @@ export default function Cart() {
   const { cartItems, removeFromCart, clearCart } = useCart();
 
   const total = cartItems.reduce(
-    (sum, item) => sum + item.price * item.quantity,
+    (sum, item) => sum + item.numericPrice * item.quantity,
     0
   );
 
