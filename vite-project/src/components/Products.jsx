@@ -111,12 +111,23 @@ export default function Products() {
               <p className="text-accent font-bold">{product.price}</p>
 
               {/* Add to Cart Button */}
-      <button
+      {/* <button
         onClick={() => addToCart(product)}
         className="mt-3 bg-black text-white px-4 py-2 rounded-lg hover:bg-gray-800 transition-all"
       >
         Add to Cart
-      </button>
+      </button> */}
+
+      <button
+  onClick={() => {
+    addToCart(product);
+    alert(`${product.name} has been added to your cart!`);
+  }}
+  className="mt-3 bg-black text-white px-4 py-2 rounded-lg hover:bg-gray-800 transition-all"
+>
+  Add to Cart
+</button>
+
 
             </div>
           ))}
