@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { useCart } from "../context/CartContext";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const { cartItems } = useCart();
+  const cartCount = cartItems.reduce((sum, item) => sum + (item.quantity || 0), 0);
 
   return (
     <nav className="flex items-center justify-between px-6 py-4 border-b bg-white sticky top-0 z-50 shadow-sm">
@@ -35,7 +38,14 @@ export default function Navbar() {
 
       {/* Cart */}
       <div className="flex items-center gap-4">
-        <div className="text-xl font-semibold cursor-pointer">🛒</div>
+        <Link to="/cart" className="relative inline-block" aria-label={`Cart with ${cartCount} items`}>
+          <span className="text-xl font-semibold">🛒</span>
+          {cartCount > 0 && (
+            <span className="absolute -top-2 -right-2 bg-black text-white text-xs rounded-full px-2 py-0.5 min-w-[20px] text-center">
+              {cartCount}
+            </span>
+          )}
+        </Link>
 
         {/* Mobile menu toggle */}
         <button
