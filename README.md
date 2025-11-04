@@ -46,6 +46,10 @@ A modern, responsive e-commerce website built with React, Vite, and Tailwind CSS
    
    Navigate to `http://localhost:5174/` to view the application.
 
+
+## Live Demo
+![Deployment link](https://e-commerce-project-6ggiyd5yv-ualine055-5515s-projects.vercel.app/)
+
 ## 📁 Project Structure
 
 ###
